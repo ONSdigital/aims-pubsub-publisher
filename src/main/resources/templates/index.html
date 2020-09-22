@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Publish PubSub Message</title>
+
+    <!--Bootstrap 4-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+</head>
+<body>
+
+<div class="container-fluid py-5">
+    <div class="row">
+        <div class="col-10 mx-auto">
+        	<h1>Publish PubSub Message</h1>
+        	<h3 th:text="${topic}"></h3>
+            <h3>Message:</h3>
+            <form method="POST" th:action="@{/publishMessage}">
+                <div class="form-group green-border-focus">
+                    <textarea class="form-control" style="min-width: 100%" id="message" name="message" rows="20"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Publish</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: pubsub-publisher
+  cloud:
+    gcp:
+      project-id: YOUR_GCP_PROJECT_ID_HERE
+      pubsub:
+        emulator-host: localhost:8681
+server:
+  port : 8082
+aims:
+  pubsub:
+    topic: new-address
