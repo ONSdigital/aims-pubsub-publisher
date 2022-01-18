@@ -3,7 +3,7 @@ spring:
     name: pubsub-publisher
   cloud:
     gcp:
-      project-id: YOUR_GCP_PROJECT_ID_HERE
+      project-id: YOUR-GCP-PROJECT-ID-HERE
       pubsub:
         emulator-host: localhost:8681
 server:
